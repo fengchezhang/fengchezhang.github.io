@@ -1,11 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>个人作品集</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffcccc, #cceeff);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        main {
+            margin-top: 60px; /* 避免被固定头部遮挡 */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .box {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .box a {
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .box a:hover {
+            color: #ff69b4;
+        }
+    </style>
 </head>
 <body>
-    <div>我的主页</div>
+    <header>
+        <h1>张学伟的主页</h1>
+    </header>
+    <main>
+        <div class="box">
+            <a target="_blank" href="./10.12周测音乐播放器/周测.html">音乐播放器项目</a>
+        </div>
+        <div class="box">
+            <a target="_blank" href="./9.14周测染品家具静态页面/首页.html">染品家具展示页</a>
+        </div>
+        <div class="box">
+            <a target="_blank" href="./无缝轮播图/08-zxw轮播图完整版 copy.html">无缝轮播图示例</a>
+        </div>
+        <div class="box">
+            <a target="_blank" href="./9.14补考题/考核题.html">静态页面设计练习</a>
+        </div>
+    </main>
 </body>
 </html>
