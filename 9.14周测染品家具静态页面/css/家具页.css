@@ -1,0 +1,402 @@
+
+/* 最上面部分 */
+.a1{
+    width: 100%;
+    height: 36px;
+    position: relative;
+    background-color: #333333;
+}
+
+/* 顶部导航栏版心 */
+.b1{
+    margin: 0 auto;
+    width: 1185px;
+	height: 242px;
+    /* background-color: brown; */
+}
+
+.a1 span{
+    color: white;
+    line-height: 36px;
+    position: absolute;
+    right: 375px;    
+}
+
+/* 上部分 */
+.c1{
+    height: 140px;
+    width: 100%;
+    padding-top: 32px;
+    /* background-color: blue; */
+}
+
+/* 上部分版心 */
+.d1{
+    width: 1185px;
+    height: 76px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+/* 左边图片 */
+.d1>img{
+    position: absolute;
+    left: 14px;
+    bottom: 8px;
+    width: 215px;
+	height: 60px;
+    /* float: left; */
+}
+
+/* 中间搜索框 */
+.e1{
+    width: 400px;
+	height: 38px;
+    /* margin: 0 auto; */
+    margin: 19px 0 19px 463px;
+    float: left;
+    /* background-color: chartreuse; */
+}
+
+/* 输入框 */
+.f1{
+    width: 310px;
+    height: 100%;
+    float: left;
+    position: relative;
+    /* background-color: aliceblue; */
+}
+
+.f1 input{
+    width: 310px;
+    height: 38px;
+    padding-left: 49px;
+    font-size: 12px;
+    line-height: 38px;
+    box-sizing: border-box; 
+    border-radius: 20px 0 0 20px;   
+    border: 2px solid #2b6e5a;
+}
+
+/* 右边搜索 */
+.e1 img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+
+.f2{
+    height: 100%;
+    width: 90px;
+    float: right;
+    text-align: center;
+    border-radius: 0 20px 20px 0; 
+    background-color: #2b6e5a;
+}
+
+.f2 span{
+    line-height: 38px;
+    font-size: 16px;
+}
+
+
+/* 右边部分 */
+.e2{
+    height: 38px;
+    width: 150px;
+    float: right;
+    margin: 19px 0 19px 0;
+    /* background-color: burlywood; */
+}
+
+.f3{
+    width: 26px;
+    height: 26px;
+    float: left;
+    margin: 6px 0 6px 11px;
+}
+
+.f4{
+    width: 21px;
+    height: 21px;
+    float: right;
+    margin: 8px 12px 9px 0;
+}
+
+.e2 span{
+    line-height: 38px;
+    margin-left: 20px;
+}
+
+/* 下部分 */
+.c2{
+    height: 70px;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+
+/* 版心 */
+.d2{
+    width: 504px;
+    height: 22px;
+    margin: 0 auto;
+    padding-top: 27px;
+    /* background-color: rgb(13, 250, 250); */
+}
+
+.d2 li{
+    float: left;
+    margin-right: 46px;
+}
+
+.e4{
+    margin-right: 0!important;    
+}
+
+.e3{
+    font-weight: bold;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #43846f;
+}
+
+.b2{
+    height: 54px;
+    width: 1205px;
+    margin: 0 auto;
+    /* line-height: 54px;
+    text-align: center; */
+    /* background-color: aquamarine; */
+}
+
+.c3{
+    height: 54px;
+    width: 110px;
+    display: flex;
+    text-align: center;
+    line-height: 54px;
+    justify-content: space-between;
+    /* background-color: blueviolet; */
+}
+
+.d3{
+    font-size: 15px;
+}
+
+.b3{
+    width: 1200px;
+    height: 120px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    /* background-color: yellow; */
+}
+
+.c4{
+    width: 600px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: azure; */
+}
+.c5{
+    width: 660px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: azure; */
+}
+.c6{
+    width: 265px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: azure; */
+}
+.d4{
+    color: #43846f;
+    margin-left: 7px;
+}
+.d5{
+    color: #43846f;
+}
+.d6{
+    color: #43846f;
+    margin-left: 2px;
+}
+.c6 img{
+    width: 14px;
+    height: 14px;
+}
+
+
+.c9{
+    width: 1205px;
+    height: 350px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    justify-content: space-between;
+    /* background-color: chocolate; */
+}
+.c10{
+    width: 1205px;
+    height: 350px;
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+    /* background-color: rgb(25, 233, 111); */
+}
+.d7{
+    width: 273px;
+    height: 345px;
+
+    /* background-color: rgb(23, 211, 70); */
+}
+.d7 img{
+    width: 100%;
+    height: 270px;
+}
+.e6{
+    color: red;
+    float: left;
+    font-size: 20px;
+    margin-left: 65px;
+}
+.e7{
+    font-size: 15px;
+    color: #666;
+    line-height: 30px;
+    float: left;
+}
+.e5{
+    text-align: center;
+}
+
+
+.a8{
+    height: 435px;
+    width: 100%;
+    margin-top: 100px;
+    background-color: #222;
+}
+
+.b6{
+    height: 100%;
+    width: 1285px;
+    margin: 0 auto;
+    /* background-color: yellow; */
+}
+
+.c12{
+    height: 188px;
+    width: 100%;
+    border-bottom: 2px solid #666;
+    /* background-color: #52d17d; */
+}
+
+.d15{
+    width: 80px;
+    height: 90px;
+    float: left;
+    margin: 47px 153px 0 55px;
+    /* background-color: rgb(9, 145, 145); */
+}
+.d15>img{
+    width: 56px;
+    height: 52px;
+    margin-left: 12px;
+}
+.d15>div{
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+}
+.d16{
+    width: 80px;
+    height: 90px;
+    margin-top: 47px;
+    float: left;
+    /* background-color: rgb(9, 145, 145); */
+}
+.d16>img{
+    width: 56px;
+    height: 52px;
+    margin-left: 12px;
+}
+.d16>div{
+    text-align: center;
+    margin-top: 8px;
+    color: white;
+}
+
+.c13{
+    width: 970px;
+    height: 165px;
+    margin: 0 auto;
+    margin-top: 40px;
+    /* background-color: chartreuse; */
+}
+
+.d17{
+    width: 222px;
+    height: 100%;
+    float: left;
+    /* background-color: blanchedalmond; */
+}
+.d17>img{
+    width: 222px;
+    height: 68px;
+}
+
+.d18{
+    width: 595px;
+    height: 100%;
+    margin-left: 375px;
+    /* float: left; */
+    /* background-color: brown; */
+}
+
+.e8{
+    width: 88px;
+    height: 100%;
+    float: left;    
+    color: white;
+    font-size: 14px;
+    margin-right: 80px;
+    /* background-color: burlywood; */
+}
+.f5{
+    color: #888;
+}
+.e8>li{
+    margin-bottom: 8px;
+}
+.e9{
+    width: 88px;
+    height: 100%;
+    float: right;
+    color: white;
+    font-size: 14px;
+    /* background-color: burlywood; */
+}
+.e9>li{
+    margin-bottom: 8px;
+}
+
+.e15{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 294px;
+    left: 228px;
+}
+
+.g1:hover {
+    color: red;
+}
+
