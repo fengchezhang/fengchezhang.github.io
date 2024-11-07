@@ -1,0 +1,515 @@
+/* 顶部导航整体 */
+.sdaohang{
+    height: 100px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+/* 顶部导航版心 */
+.banxin{
+    height: 100px;
+    width: 1450px;
+    margin: 0 auto;
+    /* background-color: aqua;  */
+    box-sizing: border-box;
+}
+
+/* 顶部左边 */
+.tu1{
+    width: 145px;
+    height: 100px;
+    /* background-color: blue; */
+    float: left;
+    position: relative;
+}
+
+/* 顶部左边图片 */
+.tu1 img{
+    width: 145px;
+    height: 43px;
+    position: absolute;
+    left: 0;
+    top: 30px;
+}
+
+/* 顶部中间 */
+.tu2{
+    float: left;
+    width: 70px;
+    height: 100%;
+    margin-left: 220px;
+    /* background-color: aliceblue; */
+}
+
+/* 顶部中间图标 */
+.tu2 img{
+    margin-top: 40px;
+}
+
+/* 顶部中间文字 */
+.gz{
+    color: #666;
+    font-size: 19px;
+}
+
+/* 搜索框整体 */
+.sousuok{
+    width: 580px;
+    height: 48px;
+    margin-top: 30px;
+    background-color: rgba(0, 174, 255, 0.37);
+    float: left;
+    border-radius: 100px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+/* 搜索框文字 */
+.sc{
+    color: white;
+    font-size: 19px;
+    /* 文本左右居中 */
+    margin-left: 20px;
+    text-align: center;
+    /* 文本上下居中 （行高等于高度） */
+    line-height: 45px;
+}
+
+/* 搜索框 */
+.sousuok>input{
+    width: 450px;
+    height: 45px;
+    border: 2px solid rgba(0, 180, 252, 0.37);
+    /* background-color: black; */
+    padding-left:40px;
+    font-size: 18px;
+    border-radius: 100px 0 0 100px;
+}
+
+/* 搜索框图标 */
+.sousuok img{
+    position: absolute;
+    left: 18px;
+    bottom: 14px;
+    width: 20px;
+    height: 20px;
+}
+
+/* 顶部右边文字 */
+.ysousuo .zu{
+    margin-left: 200px;
+    overflow: hidden;
+}
+.ysousuo li{
+    float: left;
+    margin-right: 30px;
+    padding-top: 40px;
+    color: #666;
+}
+
+/* 顶部右边图标 */
+.tu3{
+    width: 50px;
+    height: 100%;
+    float: right;
+    /* background-color: blueviolet; */
+    position: relative;
+}
+.tu3 img{
+    position: absolute;
+    right: 0;
+    bottom: 85px;
+}
+
+.nav-list {
+    width: 100%;
+    height: 50px;
+    background-color:white;
+}
+
+.nav-list .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+}
+.nav-list .container ul {
+    overflow: hidden;
+}
+
+.nav-list .container ul li {
+    height: 50px;
+    float: left;
+    font-size: 20px;
+    margin-right: 45px;
+
+    /* 行高等于高度，文字垂直居中 */
+    line-height: 50px;
+}
+
+.nav-list .second {
+    color: #29b7f5;
+    border-bottom: 3px solid #29b7f5;
+    box-sizing: border-box;
+}
+/* 3.面包屑 */
+.crumbs {
+    width: 100%;
+    background-color:  #a6b4cea4;
+}
+
+.crumbs .container {
+    width: 1500px;
+    margin: 0 auto;
+    /* background-color:  #6998b1; */
+}
+
+.crumbs .container ul {
+    overflow: hidden;
+}
+
+.crumbs .container ul li {
+    float: left;
+    margin-right: 20px;
+    line-height: 65px;
+    font-size: 12px;
+
+    /* 相对定位 */
+    position: relative;
+}
+
+.crumbs .container ul li span {
+    width: 12px;
+    height: 12px;
+
+    /* 绝对定位 */
+    position: absolute;
+    right: -16px;
+    top: 26px;
+
+    line-height: 12px;
+}
+
+/* 中间导航整体 */
+/* .zdaohang{
+    height: 90px;
+    width: 100%;
+    background-color: #a6b4cea4;
+    background-color: chartreuse;
+} */
+
+/* 中间导航版心 */
+/* .zbanxin{
+    width: 1510px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: white;
+} */
+
+/* 上部分 */
+/* .sbf{
+    width: 620px;
+    height: 30px;
+    background-color: aqua;
+} */
+
+/* .sbf li{
+    float: left;
+    font-size: 25px;
+    margin-right: 39px;
+}
+
+.zxx{
+    padding-bottom: 10px;
+    border-bottom: 2px solid aqua;
+} */
+/* 下部分 */
+/* .xbf{
+    width: 100%;
+    height: 100px;
+    margin-top: 42px;
+    background-color: aqua;
+}
+
+.xbf li{
+    float: left;
+    font-size: 15px;
+    margin-right: 15px;
+} */
+
+/* 内容 */
+.neirong{
+    height: 550px;
+    width: 100%;
+    /* padding-top: 10px; */
+    background-color: #a6b4cea4;
+    /* background-color: rgb(3, 252, 44); */
+}
+
+/* 内容版心 */
+.nbanxin{
+    height: 550px;
+    width: 1450px;
+    padding-top: 40px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    background-color: white;
+    position: relative;
+    /* background-color: yellow; */
+}
+
+
+/* 左边按钮 */
+.jt{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    float:right;
+    background-color: #6998b1;
+}
+
+.jt img{
+    width: 40px;
+    height: 40px;
+    right: 0;
+    top: 300px;  
+}
+
+/* 右边按钮 */
+.ju{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 300px;
+    border-radius: 50%;
+    margin: 20px;
+    background-color: #6998b1;
+}
+.ju img{
+    width: 40px;
+    height: 40px;
+    left: 0;
+    top: 300px;
+}
+
+/* .neirong .nbanxin span {
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: #d8eff7;
+    border-radius: 15px;
+
+    position: absolute;
+    top: calc(50% - 25px);
+
+    font-size: 20px;
+
+    text-align: center;
+    line-height: 50px;
+}
+.neirong .nbanxin span.prev {
+    left: -80px;
+}
+
+.neirong .nbanxin span.next {
+    right: -80px;
+} */
+/* 名师字体 */
+.neirong h2{
+    font-size: 40px;
+    /* margin-left: 30px; */
+}
+
+.tupian{
+    width: 1300px;
+    height: 370px;
+    /* background-color: blue; */
+    margin-left: 40px;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+/* 左边图片 */
+.tupian{
+    width: 350px;
+    height: 400px;
+    float: left;
+    margin-right: 100px;
+    /* background-color: blueviolet; */
+}
+.tupian img{
+    width: 350px;
+    height: 250px;
+}
+
+.wenzi{
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.tupian .ww{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+.tupian .ee{
+    font-size: 20px;
+    text-align: center;
+    color: aqua;
+    margin: 7px 0;
+}
+.tupian p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.tupian1{
+    width: 350px;
+    height: 400px;
+    margin-top: 38px;
+    float: left;
+    margin-right: 100px;
+    /* background-color: blueviolet; */
+}
+.tupian1 img{
+    width: 350px;
+    height: 250px;
+}
+
+.tupian1 .wenzi{
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.tupian1 .ww{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+.tupian1 .ee{
+    font-size: 20px;
+    text-align: center;
+    color: aqua;
+    margin: 7px 0;
+}
+.tupian1 p{
+    font-size: 15px;
+    text-align: center;
+}
+
+
+.tupian2{
+    width: 350px;
+    height: 400px;
+    margin-top: 38px;
+    float: left;
+    /* background-color: blueviolet; */
+}
+.tupian2 img{
+    width: 350px;
+    height: 250px;
+}
+
+.tupian2 .wenzi{
+    text-align: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.tupian2 .ww{
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+.tupian2 .ee{
+    font-size: 20px;
+    text-align: center;
+    color: aqua;
+    margin: 7px 0;
+}
+.tupian2 p{
+    font-size: 15px;
+    text-align: center;
+}
+
+/* 底部导航 */
+.ddaohang{
+    height: 185px;
+    width: 100%;
+    background-color: #444;
+}
+
+/* 底部版心 */
+.dbanxin{
+    height: 100%;
+    width: 1510px;
+    /* background-color: aqua; */
+    margin: 0 auto;
+}
+
+.ds{
+    width: 1447px;
+    height: 30px;
+    /* background-color: chartreuse; */
+    margin-left: 20px;
+    padding-top: 15px;
+}
+
+.dbanxin li{
+    color: white;
+    float: left;
+    font-size: 25px;
+    margin-right: 30px;    
+}
+
+/* 底部图标 */
+.wx{
+    float: right;
+}
+.wx img{
+    width: 33px;
+    height: 28px;
+    margin-right: 15px;
+    margin-left: 50px;
+    /* color: #9b9b9b; */
+}
+
+.wx .wxd{
+    width: 33px;
+    height: 28px;
+}
+.wx span{
+    font-size: 25px;
+    color: #9b9b9b;
+
+}
+
+
+/* 底部文字等 */
+.dwz{
+    padding-top: 10px;
+    height: 35px;
+    width: 100%;
+    /* background-color: burlywood; */
+}
+
+.dwz hr{
+    margin-top: 55px;
+    color: #666;
+}
+
+.zhouhou{
+    margin-top: 50px;
+}
+.zhouhou li{
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}

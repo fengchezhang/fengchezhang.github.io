@@ -2,23 +2,23 @@
 .a1{
     height: 80px;
     width: 100%;
-    background-color: #76c7c0;
+    /* background-color: #76c7c0; */
 }
 
 .a1 .navbar{
     width: 1180px;
     height: 100%;
     margin: 0 auto;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 
 .b1{
     width: 164px;
     height: 26px;
     padding-top: 27px;
-    color: white;
+    color: black;
     float: left;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 
 .c1{
@@ -30,26 +30,21 @@
     height: 80px;
     /* padding-top: 20px; */
     float: right;
-    background-color: coral;
+    /* background-color: coral; */
 }
 
 .b2 ul{
     justify-content: space-between;
     display: flex;
 }
-/* .c2{
-    margin-top: 20px;
-    height: 40px;
-    width: 70px;
-    background-color: rgb(28, 235, 114);
-} */
+
 .c2>li{
     line-height: 20px;
 }
 .b2 li{
     text-align: center;
     line-height: 80px;
-    color: white;
+    color: black;
 }
 
 .b2 img{
@@ -62,7 +57,7 @@
     height: 1000px;
     width: 1200px;
     margin: 0 auto;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 /* .b3{
@@ -78,7 +73,7 @@
 .b4{
     height: 135px;
     width: 100%;
-    background-color: rgb(66, 128, 97);
+    /* background-color: rgb(66, 128, 97); */
 }
 
 .c4{
@@ -111,7 +106,7 @@
 .c5{
     height: 100px;
     width: 100%;
-    background-color: cyan;
+    /* background-color: cyan; */
 }
 
 .d4{
@@ -121,7 +116,7 @@
     font-size: 30px;
     float: left;
     color: #666;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
 }
 
 .d5{
@@ -145,7 +140,7 @@
 .b5{
     height: 440px;
     width: 100%;
-    background-color: rgb(27, 77, 77);
+    /* background-color: rgb(27, 77, 77); */
 }
 
 .c6{
@@ -157,25 +152,10 @@
     background-color: aliceblue;
 }
 
-.d7{
+.d7, .d8, .d9, .d10{
     height: 100%;
     width: 272px;
-    background-color: chartreuse;
-}
-.d8{
-    height: 100%;
-    width: 272px;
-    background-color: chartreuse;
-}
-.d9{
-    height: 100%;
-    width: 272px;
-    background-color: chartreuse;
-}
-.d10{
-    height: 100%;
-    width: 272px;
-    background-color: chartreuse;
+    /* background-color: chartreuse; */
 }
 .d7>img{
     margin: 50px 0 0 100px;
@@ -208,7 +188,7 @@
     font-size: 15px;
     color: #666;
     text-align: center;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .e3{
@@ -226,7 +206,7 @@
     height: 400px;
     width: 100%;
     margin-bottom: 270px;
-    background-color: #999;
+    /* background-color: #999; */
 }
 
 .b6{
@@ -235,7 +215,7 @@
     margin: 0 auto;
     padding-top: 50px;
     /* margin-bottom: 270px; */
-    background-color: #999;
+    /* background-color: #999; */
 }
 
 .c7{
@@ -243,7 +223,7 @@
     height: 60px;
     margin: 0 auto;
     margin-bottom: 65px;
-    background-color: beige;
+    /* background-color: beige; */
 }
 
 .e4{
@@ -288,7 +268,7 @@
 .a4{
     height: 760px;
     width: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 .b7{
@@ -301,26 +281,28 @@
 .c9{
     height: 210px;
     width: 100%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 .d11{
     width: 230px;
     height: 210px;
     float: left;
-    background-color: aquamarine;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(7, 148, 136);
 }
 
 .e9{
     height: 30px;
     width: 100%;
     font-size: 25px;
-    color: #666;
+    /* color: #666; */
 }
 
 .f1{
     font-size: 14px;
-    color: #666;
+    /* color: #666; */
     margin-top: 10px;
 }
 
@@ -364,7 +346,7 @@
 .f5{
     width: 125px;
     height: 100px;
-    background-color: rgb(30, 115, 189);
+    /* background-color: rgb(30, 115, 189); */
 }
 
 .g1{
@@ -377,19 +359,22 @@
     height: 205px;
     width: 275px;
     float: right;
-    background-color: chartreuse;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(7, 148, 136);
+    /* background-color: chartreuse; */
 }
 
 .e12{
     font-size: 25px;
-    color: #666;
+    /* color: #666; */
     /* line-height: 25px; */
 }
 .e13{
     width: 100%;
     height: 120px;
-    border-radius: 5px;
-    background-color: rgb(7, 148, 136);
+    /* border-radius: 5px;
+    background-color: rgb(7, 148, 136); */
 }
 
 .f6{
@@ -401,7 +386,6 @@
 }
 .e14{
     font-size: 14px;
-    color: #666;
     font-weight: bold;
     margin-top: 10px;
     margin-left: 30px
@@ -411,7 +395,7 @@
     height: 45px;
     width: 100%;
     margin-top: 75px;
-    background-color: coral;
+    /* background-color: coral; */
 
 }
 
@@ -422,7 +406,7 @@
     line-height: 45px;
     color: #666;
     float: left;
-    background-color: aqua;    
+    /* background-color: aqua;     */
 }
 
 .d15{
@@ -436,7 +420,7 @@
 .c11{
     height: 110px;
     width: 100%;
-    background-color: bisque;
+    /* background-color: bisque; */
     margin-top: 20px;
     display: flex;
     justify-content: space-between;

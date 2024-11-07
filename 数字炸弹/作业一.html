@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i = Math.floor(Math.random() * 100 + 1);
+        console.log(i);        
+        var max = 100;
+        var min = 0;
+        var str = prompt("请输入以内" + min + "到" + max + "的数")
+
+        function itm(){
+            str=Number(str);
+            if(isNaN(str)){
+                alert('输入类型错误,请输入数字')
+                str = prompt("请输入以内" + min + "到" + max + "的数")
+                itm()
+            }
+            if(str > 100 | str < 0){
+                alert('不符合数字范围，请重新输入')
+                str = prompt("请输入以内" + min + "到" + max + "的数")
+                itm()
+            }
+            if(str < i){
+                min = str
+                alert(`猜小了`)
+                str = prompt("请输入以内" + min + "到" + max + "的数")
+                itm()
+            }else if(str > i){
+                max = str
+                alert(`猜大了`)
+                str = prompt("请输入以内" + min + "到" + max + "的数")
+                itm()
+            }else if(str == i){
+                alert(`中奖了`)
+            }
+
+        }
+        itm()
+    </script>
+</body>
+</html>
