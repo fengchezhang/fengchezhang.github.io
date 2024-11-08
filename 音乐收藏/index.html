@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音乐收藏</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        #songList {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+        ul {
+            width: 600px;
+            height: 800px;
+            margin: 0 auto;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        li:last-child {
+            border-bottom: none;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        button.active {
+            background-color: #FF4136; /* 红色 */
+        }
+        button.active:hover {
+            background-color: #C7251A; /* 深红色 */
+        }
+    </style>
+</head>
+<body>
+    <div id="songList"></div>
+
+    <script>
+        var songs = [
+            { id: 1, name: "会不会（吉他版）" },
+            { id: 2, name: "是但求其爱" },
+            { id: 3, name: "我很好（吉他版）" },
+            { id: 4, name: "海底" },
+            { id: 5, name: "执迷不悟" },
+            { id: 6, name: "他只是经过" },
+            { id: 7, name: "经济舱 (Live)" },
+            { id: 8, name: "是想你的声音啊" },
+            { id: 9, name: "苦尽甘来" },
+            { id: 10, name: "天外来物" },
+        ];
+
+        var collectList = [];
+        var ul = document.createElement("ul");
+
+        songs.forEach(function (item) {
+            var li = document.createElement("li");
+            li.innerHTML = `${item.name}<button>未收藏</button>`;
+            ul.appendChild(li);
+
+            if (localStorage.getItem(`${item.id}`)) {
+                li.querySelector('button').innerText = "取消收藏";
+                li.querySelector('button').classList.add("active");
+            }
+
+            li.onclick = function () {
+                var btn = this.querySelector("button");
+                
+                var isCollect = btn.innerHTML === "未收藏";
+                if (isCollect) {
+                    btn.innerHTML = "取消收藏";
+                    btn.classList.add("active");
+                    localStorage.setItem(`${item.id}`, `${item.id},${item.name}`);
+                } else {
+                    btn.innerHTML = "未收藏";
+                    btn.classList.remove("active");
+                    localStorage.removeItem(`${item.id}`);
+                }
+            }
+        });
+
+        document.getElementById('songList').appendChild(ul);
+    </script>
+</body>
+</html>

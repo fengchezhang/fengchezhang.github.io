@@ -1,163 +1,181 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>张学伟的个人作品集</title>
-    <style>
-        body, html {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #ffcccc, #cceeff);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1em 0;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        main {
-            margin-top: 200px; /* 避免被固定头部遮挡 */
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-            width: 100%;
-        }
-        .box {
-            background: linear-gradient(135deg, #cceeff, #ffcccc); /* 蓝粉渐变背景 */
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: calc(33.333% - 40px); /* 响应式布局 */
-            margin: 20px;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            max-width: 300px;
-        }
-        .box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-        }
-        .box img {
-            max-width: 100%; /* 图片最大宽度不超过容器 */
-            height: 280px;
-            border-radius: 10px; /* 圆角 */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
-            margin-bottom: 10px; /* 与文字之间的间距 */
-            transition: transform 0.3s ease, opacity 0.3s ease;
-            opacity: 0.8; /* 默认透明度 */
-        }
-        .box a {
-            display: block;
-            text-decoration: none;
-            color: #333;
-            font-size: 18px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .box a:hover {
-            color: #ff69b4;
-        }
-        .box:hover {
-            transform: scale(1.05); /* 鼠标悬停时放大 */
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* 更深的阴影 */
-        }
-        .box:hover img {
-            transform: scale(1.1); /* 图片放大 */
-            opacity: 1; /* 完全不透明 */
-        }
-        @media (max-width: 768px) {
-            .box {
-                width: calc(50% - 40px); /* 在小屏幕设备上，每行显示两个盒子 */
-            }
-        }
-        @media (max-width: 480px) {
-            .box {
-                width: 100%; /* 在非常小的屏幕上，每个盒子独占一行 */
-                margin: 20px 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./index.css">
 </head>
+
 <body>
     <header>
-        <img src="./images/1.jpg" alt="张学伟" style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;">
-        <h1>张学伟的个人作品集</h1>
+        <img src="./images/1.jpg" alt="张学伟"
+            style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;">
+        <h1>张学伟的</h1>
+        <h1>个人作品集</h1>
+        <div class="sidebar">
+            <button class="tablinks" onclick="openTab(event, 'One')">HTML/CSS</button>
+            <button class="tablinks" onclick="openTab(event, 'Two')">JS</button>
+            <button class="tablinks" onclick="openTab(event, 'Three')">JQ</button>
+            <button class="tablinks" onclick="openTab(event, 'Four')">BOOTSTRAP</button>
+        </div>
     </header>
-    <main>
-        <!-- 各个项目的链接 -->
-        <div class="box">
-            <a target="_blank" href="./10.12周测音乐播放器/周测.html">
-                <img src="images/1.png" alt="">音乐播放器项目</a>
+
+    <div id="content">
+        <div id="One" class="tabcontent">
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./粘贴内容/作业.html">
+                        <img src="images/12.png" alt=""></a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./表格/index.html">
+                        <img src="images/16.png" alt="">表格</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./唯品会导航栏/index.html">
+                        <img src="images/17.png" alt="">唯品会导航栏</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./染品家具/首页.html">
+                        <img src="images/2.png" alt="">染品家具展示页</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./静态页面/index.html">
+                        <img src="images/4.png" alt="">静态页面设计练习</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./小米之家侧边栏/index.html">
+                        <img src="images/18.png" alt="">小米之家侧边栏</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./css容器查询/index.html">
+                        <img src="images/13.png" alt="">容器查询</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./趣学网/index.html">
+                        <img src="images/7.png" alt="">趣学网</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./百度首页/index.html">
+                        <img src="images/19.png" alt="">百度首页</a>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            
-            <a target="_blank" href="./9.14周测染品家具静态页面/首页.html">
-                <img src="images/2.png" alt="">染品家具展示页</a>
+
+        <div id="Two" class="tabcontent" style="display:none;">
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./音乐播放器/index.html">
+                        <img src="images/1.png" alt="">音乐播放器</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./无缝轮播图/index.html">
+                        <img src="images/3.png" alt="">无缝轮播图</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./自定义日期倒计时/index.html">
+                        <img src="images/24.png" alt="">自定义日期倒计时</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./放大镜/index.html">
+                        <img src="images/6.png" alt="">放大镜</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./网页时钟/index.html">
+                        <img src="images/11.png" alt="">网页时钟</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./音乐收藏/index.html">
+                        <img src="images/20.png" alt="">音乐收藏</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./数字炸弹/index.html">
+                        <img src="images/9.png" alt="">数字炸弹</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./拼图游戏/index.html">
+                        <img src="images/23.png" alt="">拼图游戏</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./推箱子/index.html">
+                        <img src="images/10.png" alt="">推箱子静态关卡</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./哔哩哔哩评论区/index.html">
+                        <img src="images/5.png" alt="">哔哩哔哩评论区</a>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            
-            <a target="_blank" href="./无缝轮播图/08-zxw轮播图完整版 copy.html">
-                <img src="images/3.png" alt="">无缝轮播图示例</a>
+
+        <div id="Three" class="tabcontent" style="display:none;">
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./代办事项列表/index.html">
+                        <img src="images/21.png" alt="">代办事项列表</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./手风琴/index.html">
+                        <img src="images/8.png" alt="">手风琴</a>
+                </div>
+            </div>
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./电梯导航/index.html">
+                        <img src="images/22.png" alt="">电梯导航</a>
+                </div>
+            </div>
         </div>
-        <div class="box">
-            
-            <a target="_blank" href="./9.14补考题/考核题.html">
-                <img src="images/4.png" alt="">静态页面设计练习</a>
+
+        <div id="Four" class="tabcontent" style="display:none;">
+            <div class="a1">
+                <div class="box">
+                    <a target="_blank" href="./宠物网站网页/new.html">
+                        <img src="images/14.png" alt="">宠物网站</a>
+                </div>
+                <div class="box">
+                    <a target="_blank" href="./赌场/index.html">
+                        <img src="images/15.png" alt="">赌场网站</a>
+                </div>
+            </div>
+            <div class="a1">
+            </div>
         </div>
-        <div class="box">
-            
-            <a target="_blank" href="./哔哩哔哩评论区/15-zxw按下回车发布评论 copy.html">
-                <img src="images/5.png" alt="">哔哩哔哩评论区</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./放大镜/product-dev.html">
-                <img src="images/6.png" alt="">放大镜</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./趣学网静态/day6.html">
-                <img src="images/7.png" alt="">趣学网静态</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href=".//手风琴/手风琴.html">
-                <img src="images/8.png" alt="">手风琴</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./数字炸弹/作业一.html">
-                <img src="images/9.png" alt="">数字炸弹</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./推箱子静态关卡/推箱子作业.html">
-                <img src="images/10.png" alt="">推箱子静态关卡</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./网页时钟/网页时钟（图形版）.html">
-                <img src="images/11.png" alt="">网页时钟</a>
-        </div>
-        <div class="box">
-            
-            <a target="_blank" href="./粘贴内容/作业.html">
-                <img src="images/12.png" alt="">粘贴内容</a>
-        </div>
-    </main>
+    </div>
 </body>
+<script>
+    // scripts.js
+    document.addEventListener("DOMContentLoaded", function () {
+        // 默认打开第一个标签
+        openTab(event, 'One');
+    });
+    function openTab(evt, tabName) {
+        // 获取所有元素带有 class="tabcontent" 的元素
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none"; // 隐藏所有 tabcontent
+        }
+        // 获取所有元素带有 class="tablinks" 的元素，并移除 active 类
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", ""); // 移除 active 类
+        }
+        // 显示当前选择的tab，并为它添加 active 类
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+</script>
+
 </html>

@@ -1,0 +1,273 @@
+header {
+    min-height: 143px;
+}
+
+body {
+    background-color: #0c123a;
+}
+
+.box2 {
+    min-height: 470px;
+    background-color: #0c123a;
+    color: white;
+}
+
+.genuine {
+    min-height: 36px;
+    border: 1px solid #e81b5d;
+    border-radius: 15px;
+    text-align: center;
+    line-height: 36px;
+    margin: 30px 0 20px;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: bold;
+    height: 60px;
+}
+
+.play {
+    height: 38px;
+    background-color: #eb185c;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.join {
+    height: 38px;
+    border: 1px solid #e81b5d;
+    background-color: #0c123a;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 5px;
+}
+
+.jishuqi {
+    height: 163px;
+    border: 2px solid #e81b5d;
+    border-radius: 100px;
+    margin-top: 100px;
+}
+
+/* 第一部分 */
+.one {
+    height: 720px;
+    width: 100%;
+    padding-top: 95px;
+    color: white;
+    background-color: rgb(11, 17, 60);
+}
+
+.a1 {
+    width: 120px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto;
+}
+
+.a2 {
+    font-size: 40px;
+    font-weight: 1000px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 66px;
+}
+
+.one .thumbnail {
+    width: 326px;
+    height: 326px;
+    background-color: rgb(1, 6, 44);
+}
+
+.thumbnail img {
+    margin: 48px 0 10px 35px !important;
+}
+
+.one .caption h3,
+p {
+    color: white !important;
+}
+
+.one .caption p {
+    font-size: 19px;
+    margin-top: 25px;
+}
+
+/* 第二部分 */
+.two {
+    height: 1020px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    text-align: center;
+    background-color: rgb(8, 14, 55);
+}
+
+.two .thumbnail {
+    height: 326px;
+    background-color: rgb(1, 6, 44);
+}
+
+.two .thumbnail img {
+    height: 200px;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.two .caption h3,
+p {
+    color: white !important;
+}
+
+/* 第三部分 */
+.three {
+    height: 1020px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    text-align: center;
+    background-color: rgb(11, 18, 60);
+}
+
+.three .thumbnaill {
+    height: 620px;
+    position: relative;
+}
+
+.three .thumbnaill h3 {
+    position: absolute;
+    left: 27px;
+    bottom: 32px;
+}
+
+.three .thumbnail {
+    height: 300px;
+    position: relative;
+}
+
+.three .thumbnail h3 {
+    position: absolute;
+    color: white !important;
+    left: 27px;
+    bottom: 32px;
+}
+
+.three img {
+    width: 100%;
+    height: 100%;
+    margin: 0 !important;
+}
+
+/* 第四部分 */
+.four {
+    height: 920px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    text-align: center;
+    background-color: rgb(9, 14, 56);
+}
+
+.four .thumbnail {
+    height: 460px;
+    text-align: left;
+    border: 1px solid rgb(44, 47, 80);
+    background-color: rgb(1, 6, 44);
+    position: relative;
+}
+
+.four img {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border-radius: 50%;
+    margin: 0 !important;
+}
+
+.four h3 {
+    margin-top: 100px;
+    color: white;
+}
+
+.four p {
+    font-size: 18px;
+    color: rgb(207, 205, 201) !important;
+}
+
+.four .b1 {
+    color: rgb(86, 90, 116) !important;
+}
+
+/* 第五部分 */
+.five {
+    height: 920px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    text-align: center;
+    background-color: rgb(11, 17, 60);
+}
+
+.five .thumbnail {
+    height: 440px;
+    text-align: left;
+    padding-top: 300px;
+    border: 1px solid rgb(44, 47, 80);
+    background-color: rgb(1, 6, 44);
+    position: relative;
+}
+
+.five img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0 !important;
+}
+
+.five p {
+    color: white !important;
+}
+
+.five .b1 {
+    font-size: 22px;
+}
+
+/* 第六部分 */
+.six {
+    height: 720px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    background-color: rgb(8, 14, 55);
+}
+
+.six h3 {
+    font-size: 25px !important;
+    background-color: rgb(7, 11, 49);
+    border: 1px solid rgb(60, 65, 97);
+    height: 70px;
+    line-height: 70px;
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.six p {
+    color: rgb(207, 208, 217) !important;
+    font-size: 20px !important;
+    margin: 5px 0 5px 0;
+}
+
+/* 第七部分 */
+.seven {
+    height: 720px;
+    width: 100%;
+    color: white;
+    padding-top: 95px;
+    text-align: center;
+    background-color: rgb(11, 17, 60);
+}

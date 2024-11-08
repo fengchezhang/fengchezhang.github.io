@@ -1,0 +1,53 @@
+ul,
+ol,
+li {
+    margin: 0;
+    padding: 0;
+    /* 去除列表的标志 （列表的实心圆、数字标志） */
+    list-style: none;
+}
+
+.navber{
+    width: 280px;
+    height: 600px;
+    margin-left: 30px;
+    background-color: rgb(19, 28, 36);
+}
+.fother{
+    font-size: 25px;
+    line-height: 50px;
+    position: relative;
+}
+
+.fother>li{
+    height: 60px;
+    padding-left: 30px;
+    /* border: 1px solid#666; */
+    color: #888;
+}
+
+.fother>li:hover{
+    background-color: #ff6700;
+}
+
+.fother img{
+    height: 599px;
+    position: absolute;
+    border: 1px solid#666;
+    left: 280px;
+    box-sizing: border-box;
+    top: 0;
+}
+
+.child{
+    display: none;
+}
+
+.fother>li:hover .child{
+    display: block;
+}
+
+.fother span{
+    float: right;
+    padding-right: 10px;
+}
