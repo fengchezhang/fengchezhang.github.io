@@ -1,0 +1,126 @@
+:root {
+  --color-light: #d8cbb1;
+  --color-dark: #282624;
+  --size: 60vmin;
+  --speed: 5s;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+}
+body * {
+  transform-style: preserve-3d;
+}
+
+.shape {
+  display: grid;
+  width: var(--size);
+  height: var(--size);
+}
+.shape span {
+  position: relative;
+  z-index: -1;
+  grid-row: 1/1;
+  grid-column: 1/1;
+  background-color: var(--color-dark);
+  animation: flipAnim var(--speed) linear infinite;
+}
+.shape span:nth-child(1), .shape span:nth-child(1):after {
+  animation-delay: 0.2s;
+}
+.shape span:nth-child(2), .shape span:nth-child(2):after {
+  animation-delay: 0.4s;
+}
+.shape span:nth-child(3), .shape span:nth-child(3):after {
+  animation-delay: 0.6s;
+}
+.shape span:nth-child(4), .shape span:nth-child(4):after {
+  animation-delay: 0.8s;
+}
+.shape span:nth-child(5), .shape span:nth-child(5):after {
+  animation-delay: 1s;
+}
+.shape span:nth-child(6), .shape span:nth-child(6):after {
+  animation-delay: 1.2s;
+}
+.shape span:nth-child(7), .shape span:nth-child(7):after {
+  animation-delay: 1.4s;
+}
+.shape span:nth-child(8), .shape span:nth-child(8):after {
+  animation-delay: 1.6s;
+}
+.shape span:nth-child(9), .shape span:nth-child(9):after {
+  animation-delay: 1.8s;
+}
+.shape span:nth-child(10), .shape span:nth-child(10):after {
+  animation-delay: 2s;
+}
+.shape span:nth-child(11), .shape span:nth-child(11):after {
+  animation-delay: 2.2s;
+}
+.shape span:nth-child(12), .shape span:nth-child(12):after {
+  animation-delay: 2.4s;
+}
+.shape span:nth-child(13), .shape span:nth-child(13):after {
+  animation-delay: 2.6s;
+}
+.shape span:nth-child(14), .shape span:nth-child(14):after {
+  animation-delay: 2.8s;
+}
+.shape span:nth-child(15), .shape span:nth-child(15):after {
+  animation-delay: 3s;
+}
+.shape span:nth-child(16), .shape span:nth-child(16):after {
+  animation-delay: 3.2s;
+}
+.shape span:nth-child(17), .shape span:nth-child(17):after {
+  animation-delay: 3.4s;
+}
+.shape span:nth-child(18), .shape span:nth-child(18):after {
+  animation-delay: 3.6s;
+}
+.shape span:nth-child(19), .shape span:nth-child(19):after {
+  animation-delay: 3.8s;
+}
+.shape span:nth-child(20), .shape span:nth-child(20):after {
+  animation-delay: 4s;
+}
+.shape span:nth-child(21), .shape span:nth-child(21):after {
+  animation-delay: 4.2s;
+}
+.shape span:nth-child(22), .shape span:nth-child(22):after {
+  animation-delay: 4.4s;
+}
+.shape span:nth-child(23), .shape span:nth-child(23):after {
+  animation-delay: 4.6s;
+}
+.shape span:nth-child(24), .shape span:nth-child(24):after {
+  animation-delay: 4.8s;
+}
+.shape span:nth-child(25), .shape span:nth-child(25):after {
+  animation-delay: 5s;
+}
+.shape span:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--color-light);
+  animation: afterAnim var(--speed) linear infinite;
+}
+
+@keyframes flipAnim {
+  to {
+    transform: rotate3d(1, 1, 0, 180deg);
+  }
+}
+@keyframes afterAnim {
+  50% {
+    transform: translateZ(-1px) rotate3d(1, 1, 0, 7.2deg);
+  }
+}
