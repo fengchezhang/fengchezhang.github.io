@@ -1,16 +1,27 @@
-body, html {
+body,
+html {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #ffcccc, #cceeff);
+    background-image: url('images/1.webp');
+    /* 设置背景图片路径 */
+    background-size: cover;
+    /* 使背景图片覆盖整个 body */
+    background-position: center;
+    /* 使背景图片居中 */
+    background-repeat: no-repeat;
+    /* 不重复背景图片 */
+    /* background: linear-gradient(135deg, #ffcccc, #cceeff); */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
 }
+
 header {
-    background-color: black;
+    background: linear-gradient(to bottom, #000000, #333333, #666666);
+    /* background-color: black; */
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -21,38 +32,89 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.title h1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.title:hover img {
+    transform: scale(1.5);
+    /* 图片放大 */
+    opacity: 1;
+    /* 完全不透明 */
+}
+
+header p:hover {
+    color: greenyellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* 文字阴影效果 */
+    transform: translateX(2px) translateY(2px);
+    /* 水平偏移50像素 */
+}
+
+header h1:hover {
+    color: greenyellow;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* 文字阴影效果 */
+    transform: translateX(2px) translateY(2px);
+    /* 水平偏移50像素 */
+}
+
+header h1 {
+    margin-top: 30px;
+    transition: color 0.3s ease;
+}
+
+header p {
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
 main {
-    margin-left: 600px; /* 避免被固定头部遮挡 */
+    margin-left: 600px;
+    /* 避免被固定头部遮挡 */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px;
     width: 100%;
 }
+
 .box {
-    background: linear-gradient(135deg, #cceeff, #ffcccc); /* 蓝粉渐变背景 */
+    background: linear-gradient(to bottom,#00FFFF, #ADD8E6);
+    /* 蓝粉渐变背景 */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    width: calc(33.333% - 40px); /* 响应式布局 */
+    width: calc(33.333% - 40px);
+    /* 响应式布局 */
     margin: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     max-width: 300px;
 }
+
 .box:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
 .box img {
-    max-width: 100%; /* 图片最大宽度不超过容器 */
+    max-width: 100%;
+    /* 图片最大宽度不超过容器 */
     height: 280px;
-    border-radius: 10px; /* 圆角 */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 阴影 */
-    margin-bottom: 10px; /* 与文字之间的间距 */
+    border-radius: 10px;
+    /* 圆角 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* 阴影 */
+    margin-bottom: 10px;
+    /* 与文字之间的间距 */
     transition: transform 0.3s ease, opacity 0.3s ease;
-    opacity: 0.8; /* 默认透明度 */
+    opacity: 0.8;
+    /* 默认透明度 */
 }
+
 .box a {
     display: block;
     text-decoration: none;
@@ -61,25 +123,36 @@ main {
     font-weight: bold;
     transition: color 0.3s ease;
 }
+
 .box a:hover {
     color: #ff69b4;
 }
+
 .box:hover {
-    transform: scale(1.05); /* 鼠标悬停时放大 */
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* 更深的阴影 */
+    transform: scale(1.05);
+    /* 鼠标悬停时放大 */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    /* 更深的阴影 */
 }
+
 .box:hover img {
-    transform: scale(1.1); /* 图片放大 */
-    opacity: 1; /* 完全不透明 */
+    transform: scale(1.1);
+    /* 图片放大 */
+    opacity: 1;
+    /* 完全不透明 */
 }
+
 @media (max-width: 768px) {
     .box {
-        width: calc(50% - 40px); /* 在小屏幕设备上，每行显示两个盒子 */
+        width: calc(50% - 40px);
+        /* 在小屏幕设备上，每行显示两个盒子 */
     }
 }
+
 @media (max-width: 480px) {
     .box {
-        width: 100%; /* 在非常小的屏幕上，每个盒子独占一行 */
+        width: 100%;
+        /* 在非常小的屏幕上，每个盒子独占一行 */
         margin: 20px 0;
     }
 }
@@ -107,21 +180,25 @@ main {
     color: blue;
     background-color: #4fc718;
     border: 1px solid white;
-    transform: translateX(5px) translateY(5px); /* 鼠标悬停时的文字偏移效果 */
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7); /* 鼠标悬停时的文字阴影效果 */
+    transform: translateX(5px) translateY(5px);
+    /* 鼠标悬停时的文字偏移效果 */
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+    /* 鼠标悬停时的文字阴影效果 */
 }
 
 .tabcontent {
     width: 1200px;
-    margin-left: 220px; /* 与侧边栏对齐 */
+    margin-left: 220px;
+    /* 与侧边栏对齐 */
     padding: 20px;
 }
 
-.a1{
+.a1 {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
-.a2{
+
+.a2 {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }

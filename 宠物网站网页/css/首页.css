@@ -1,0 +1,615 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* 顶部导航条  */
+.itm {
+    color: black !important;
+    font-size: 20px;
+}
+
+.itm:hover {
+    color: red !important;
+    border-bottom: 2px solid red;
+}
+
+.navbar-collapse img {
+    margin-top: 10px;
+}
+
+/* 第一部分 */
+.thumbnail .imgw {
+    width: 120px;
+    height: 35px;
+    padding-top: 5px;
+    background-color: red;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.thumbnail .imgw:hover {
+    background-color: blue;
+    color: white;
+    ;
+    transition: all 0.5s;
+}
+
+/* 第二部分 */
+.text {
+    height: 488px;
+    margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(209, 55, 39);
+}
+
+.texttwo {
+    height: 488px;
+    margin-top: 20px;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(238, 238, 238);
+}
+
+.img-responsive {
+    height: 488px;
+    margin-top: 20px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container-fluid .title-a {
+    width: 165px;
+    height: 55px;
+    margin: 0 auto;
+    border-bottom: 2px solid white;
+    margin-top: 100px;
+}
+
+.container-fluid .title-b {
+    width: 165px;
+    height: 55px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+    margin-top: 100px;
+}
+
+.aa img {
+    transition: transform 0.5s ease;
+    /* 平滑过渡效果 */
+}
+
+.aa:hover img {
+    transform: scale(1.1);
+    /* 放大图片 */
+}
+
+.container-fluid p {
+    margin: 30px 0 30px 0;
+}
+
+/* 第三部分 */
+.boddly h1 {
+    display: flex;
+    margin-top: 80px;
+    font-weight: 600;
+    justify-content: center;
+}
+
+.container .imgg {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+
+/* 第四部分 */
+.image-container {
+    background-color: rgb(244, 244, 244);
+    /* 初始背景色 */
+    border: 2px solid white;
+    /* 设置边框样式 */
+    padding: 20px;
+    /* 可选：增加内边距以使图片与边框之间有空间 */
+    display: inline-block;
+    /* 使容器内联块级元素，以便图片对齐 */
+    text-align: center;
+    /* 文字居中 */
+    transition: background-color 0.3s, color 0.3s;
+    /* 平滑过渡效果 */
+    overflow: hidden;
+    /* 隐藏溢出部分 */
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-container img {
+    width: 100%;
+    /* 图片宽度占满容器 */
+    height: auto;
+    /* 保持图片比例 */
+    transition: transform 0.3s ease;
+    /* 添加平滑过渡效果 */
+}
+
+.image-container .product-text {
+    font-size: 18px;
+    margin-top: 10px;
+    /* 文字与图片之间的间距 */
+    color: #000;
+    /* 默认文字颜色 */
+}
+
+.image-container:hover {
+    background-color: red;
+    /* 鼠标悬停时背景变红 */
+    color: white;
+    /* 鼠标悬停时文字变白 */
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+    /* 放大图片 */
+}
+
+.product-text {
+    margin-top: 25px !important;
+    /* 将文字往下移动 20px */
+}
+
+
+.container .imgq {
+    width: 160px;
+    height: 48px;
+    display: flex;
+    font-size: 19px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid red;
+}
+
+.container .imgq:hover {
+    background-color: red;
+    color: white;
+    ;
+    transition: all 0.5s;
+}
+
+.container-fluid .imgq {
+    width: 120px;
+    height: 45px;
+    padding-top: 5px;
+    margin: 0 auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    border: 1px solid white;
+}
+
+.container-fluid .imgw {
+    width: 120px;
+    height: 45px;
+    padding-top: 5px;
+    background-color: red;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.container-fluid .imgq:hover {
+    background-color: blue;
+    color: white;
+    ;
+    transition: all 0.5s;
+}
+
+.container-fluid .imgw:hover {
+    background-color: blue;
+    color: white;
+    ;
+    transition: all 0.5s;
+}
+
+/* 第五部分 */
+.a1 {
+    width: 100%;
+    height: 545px;
+    background-color: aqua;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    padding-top: 340px;
+    background-image: url('../images/whybackgroud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+
+.b1 {
+    height: 355px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.b1 .thumbnail {
+    height: 355px;
+    /* width: calc(33.333% - 20px); */
+    /* 33.333% 的宽度减去两边的 margin */
+    margin: 10px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.b1 .thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+.b1 .thumbnail h3 {
+    font-weight: 600;
+}
+
+.b1 .thumbnail p {
+    font-size: 18px;
+    margin-bottom: 80px;
+}
+
+.news-section {
+    margin-top: 100px;
+    /* 增加顶部间距 */
+}
+
+.news-section .boddly h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.news-section .imgg {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+    .b1 {
+        height: auto;
+    }
+
+    .b1 .thumbnail {
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .b1 .thumbnail img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .b1 .thumbnail p {
+        margin-bottom: 20px;
+    }
+
+    .news-section h1 {
+        margin-top: 350px;
+        /* 调整顶部间距 */
+    }
+}
+
+@media (max-width: 576px) {
+    .b1 .thumbnail {
+        height: auto;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .b1 .thumbnail img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .b1 .thumbnail p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .b1 .thumbnail .imgw {
+        width: 120px;
+        height: 30px;
+    }
+
+    .news-section {
+        margin-top: 30px;
+        /* 调整顶部间距 */
+    }
+
+    .news-section .imgg p {
+        font-size: 14px;
+    }
+}
+
+/* 第六部分 */
+.a2 .thumbnail {
+    height: 400px;
+    position: relative;
+    /* 使 .thumbnail 成为相对定位的容器 */
+}
+
+.a2 .thumbnail .image-container {
+    position: relative;
+    /* 使 .image-container 成为相对定位的容器 */
+    height: 100%;
+    width: 100%;
+}
+
+.a2 .thumbnail .image-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* 保持图片比例并填充容器 */
+}
+
+.a2 .thumbnail p {
+    width: 350px;
+    font-size: 15px;
+}
+
+.a2 .thumbnail .text-overlay {
+    position: absolute;
+    /* 绝对定位，相对于 .image-container */
+    top: 50%;
+    /* 垂直居中 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translate(-50%, -50%);
+    /* 精确居中 */
+    color: white;
+    /* 文字颜色 */
+    font-size: 24px;
+    /* 文字大小 */
+    text-align: center;
+    /* 文字水平居中 */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* 背景颜色，透明度为 50% */
+    padding: 10px;
+    /* 内边距 */
+    border-radius: 5px;
+    /* 圆角 */
+    opacity: 0;
+    /* 默认隐藏 */
+    transition: opacity 0.3s ease;
+    /* 平滑过渡效果 */
+}
+
+.a2 .thumbnail:hover .text-overlay {
+    opacity: 1;
+    /* 鼠标悬停时显示 */
+}
+
+.center-block {
+    display: inline-block;
+    float: none;
+}
+
+/* 底部导航栏 */
+.a3 {
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    padding-top: 100px;
+    background-color: rgb(13, 13, 13);
+}
+
+.a3 .navbar {
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.b3 {
+    width: 370px;
+    height: 180px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    /* 增加字间距 */
+    float: left;
+    color: rgb(134, 134, 134);
+}
+
+.b4 {
+    width: 300px;
+    height: 200px;
+    float: left;
+    color: white;
+    padding-left: 55px;
+}
+
+.b4 h2 {
+    margin: 0 0 35px 0;
+}
+
+.b4 li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.b4 ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.b5 {
+    height: 260px;
+    width: 140px;
+    float: right;
+    color: white;
+    position: relative;
+}
+
+.b5 h2 {
+    margin: 0 5px 35px 5px;
+}
+
+.b5 .c1 {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(209, 55, 39);
+}
+
+.c1:hover {
+    background-color: red;
+}
+
+.b5 .c2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.b5 .c2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.b6 {
+    height: 80px;
+    width: 500px;
+    margin-top: 300px;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+    clear: both;
+}
+
+.b6 .c3 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* 返回顶部 */
+#back-to-top {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-color: #a0ceff;
+    text-align: center;
+    /* 使箭头居中 */
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#back-to-top::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 12px solid white;
+    margin-top: 12px;
+    /* 调整箭头的位置 */
+}
+
+#back-to-top:hover {
+    background-color: #004d74;
+}
+
+/* 媒体查询 */
+@media (max-width: 1000px) {
+    .a3 {
+        width: 100%;
+        height: 800px;
+        /* 原来的两倍高度 */
+    }
+
+    .b3,
+    .b4,
+    .b5,
+    .b6 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .b3 {
+        height: auto;
+    }
+
+    .b4 {
+        padding-left: 0;
+    }
+
+    .b5 {
+        height: auto;
+    }
+
+    .b5 .c2 {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .b6 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .a3 {
+        height: 800px;
+        /* 原来的两倍高度 */
+        padding-top: 50px;
+    }
+
+    .b3 p {
+        font-size: 16px;
+    }
+
+    .b4 h2,
+    .b5 h2 {
+        font-size: 18px;
+    }
+
+    .b4 li {
+        font-size: 14px;
+    }
+
+    .b5 .c1 {
+        font-size: 14px;
+    }
+
+    .b6 {
+        font-size: 14px;
+    }
+
+    .b6 .c3 {
+        font-size: 12px;
+    }
+}

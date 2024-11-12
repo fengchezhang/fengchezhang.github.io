@@ -10,10 +10,12 @@
 
 <body>
     <header>
-        <img src="./images/1.jpg" alt="张学伟"
-            style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;">
-        <h1>张学伟的</h1>
+        <div class="title">
+            <img src="./images/1.jpg" alt="张学伟"
+                style="border-radius: 50%; width: 50px; height: 50px; vertical-align: middle;">
+        </div>
         <h1>个人作品集</h1>
+        <p>by 张学伟</p>
         <div class="sidebar">
             <button class="tablinks" onclick="openTab(event, 'One')">HTML/CSS</button>
             <button class="tablinks" onclick="openTab(event, 'Two')">JS</button>
@@ -176,6 +178,7 @@
         document.getElementById(tabName).style.display = "block";
         evt.currentTarget.className += " active";
     }
+    
 </script>
 
 </html>

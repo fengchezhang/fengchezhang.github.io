@@ -1,0 +1,191 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* 顶部导航条  */
+.itm {
+    color: black !important;
+    font-size: 20px;
+}
+
+.itm:hover {
+    color: red !important;
+    border-bottom: 2px solid red;
+}
+
+.navbar-collapse img {
+    margin-top: 10px;
+}
+
+
+/* 底部导航栏 */
+.a3 {
+    width: 100%;
+    height: 500px;
+    margin-top: 60px;
+    padding-top: 100px;
+    background-color: rgb(13, 13, 13);
+}
+
+.a3 .navbar {
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.b3 {
+    width: 370px;
+    height: 180px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    /* 增加字间距 */
+    float: left;
+    color: rgb(134, 134, 134);
+}
+
+.b4 {
+    width: 300px;
+    height: 200px;
+    float: left;
+    color: white;
+    padding-left: 55px;
+}
+
+.b4 h2 {
+    margin: 0 0 35px 0;
+}
+
+.b4 li {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.b4 ul,
+li {
+    list-style: none;
+    padding: 0;
+}
+
+.b5 {
+    height: 260px;
+    width: 140px;
+    float: right;
+    color: white;
+    position: relative;
+}
+
+.b5 h2 {
+    margin: 0 5px 35px 5px;
+}
+
+.b5 .c1 {
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    line-height: 40px;
+    background-color: rgb(209, 55, 39);
+}
+
+.c1:hover {
+    background-color: red;
+}
+
+.b5 .c2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+.b5 .c2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.b6 {
+    height: 80px;
+    width: 500px;
+    margin-top: 300px;
+    font-size: 16px;
+    color: rgb(134, 134, 134);
+    clear: both;
+}
+
+.b6 .c3 {
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+}
+
+/* 媒体查询 */
+@media (max-width: 1000px) {
+    .a3 {
+        width: 100%;
+        height: 800px;
+        /* 原来的两倍高度 */
+    }
+
+    .b3,
+    .b4,
+    .b5,
+    .b6 {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .b3 {
+        height: auto;
+    }
+
+    .b4 {
+        padding-left: 0;
+    }
+
+    .b5 {
+        height: auto;
+    }
+
+    .b5 .c2 {
+        position: static;
+        margin-top: 20px;
+    }
+
+    .b6 {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .a3 {
+        height: 800px;
+        /* 原来的两倍高度 */
+        padding-top: 50px;
+    }
+
+    .b3 p {
+        font-size: 16px;
+    }
+
+    .b4 h2,
+    .b5 h2 {
+        font-size: 18px;
+    }
+
+    .b4 li {
+        font-size: 14px;
+    }
+
+    .b5 .c1 {
+        font-size: 14px;
+    }
+
+    .b6 {
+        font-size: 14px;
+    }
+
+    .b6 .c3 {
+        font-size: 12px;
+    }
+}
