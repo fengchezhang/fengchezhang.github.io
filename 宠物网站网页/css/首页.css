@@ -512,35 +512,21 @@ li {
 }
 
 /* 返回顶部 */
-#back-to-top {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    background-color: #a0ceff;
-    text-align: center;
-    /* 使箭头居中 */
-    border-radius: 50%;
+.back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+    display: none; /* 默认隐藏 */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease;
+    z-index: 1000; /* 确保按钮在所有内容之上 */
 }
 
-#back-to-top::before {
-    content: '';
-    display: inline-block;
-    width: 0;
-    height: 0;
-    border-left: 8px solid transparent;
-    border-right: 8px solid transparent;
-    border-bottom: 12px solid white;
-    margin-top: 12px;
-    /* 调整箭头的位置 */
-}
-
-#back-to-top:hover {
-    background-color: #004d74;
+.back-to-top:hover {
+    opacity: 0.8;
 }
 
 /* 媒体查询 */

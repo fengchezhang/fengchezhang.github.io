@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>放大镜</title>
+    <style>
+        .xxx {
+            display: flex;
+        }
+        .stage {
+            width: 400px;
+            height: 400px;
+            position: relative;
+        }
+        .stage:hover {
+            cursor: zoom-in;
+        }
+        .stage img {
+            width: 100%;
+        }
+        .mask {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(255, 0, 0, 0.342);
+            position: absolute;
+            top: 0;
+            left: 0;
+            visibility: hidden;
+        }
+        .preview {
+            width: 400px;
+            height: 400px;
+            box-shadow: 0 0 5px 0 rgb(153, 153, 153);
+            overflow: hidden;
+            margin-left: 20px;
+            position: relative;
+        }
+        .preview img {
+            width: 200%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .tabs button {
+            height: 200px;
+            width: 200px;
+            background-color: white;
+            margin-top: 100px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.2s;
+            font-size: 17px;
+        }
+        .tabs button:hover {
+            background-color: #e45a30;
+        }
+        .tabs img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="app" class="xxx">
+    <div class="stage" @mousemove="moveMask" @mouseleave="hideMask">
+        <img :src="currentImage" alt=""/>
+        <div class="mask" ref="mask" :style="{visibility: maskVisibility}"></div>
+    </div>
+    <div class="preview">
+        <img :src="currentImage" :style="{left: previewX+'px', top: previewY+'px'}"/>
+    </div>
+    <div class="tabs">
+        <button v-for="(image, index) in images" :key="index" @click="changeImage(image)">
+            <img :src="image" alt=""/>
+        </button>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+<script>
+new Vue({
+    el: '#app',
+    data: {
+        currentImage: './banner1.jpg',
+        images: ['./banner1.jpg', './banner2.jpg', './banner3.jpg', './banner4.jpg', './banner5.jpg'],
+        maskX: 0,
+        maskY: 0,
+        maskVisibility: 'hidden',
+        previewX: 0,
+        previewY: 0
+    },
+    methods: {
+        moveMask(e) {
+            const stage = e.target.parentElement;
+            const x = e.clientX - stage.offsetLeft;
+            const y = e.clientY - stage.offsetTop;
+
+            let maskX = x - 100;
+            let maskY = y - 100;
+
+            // 边界检测
+            if (maskX < 0) {
+                maskX = 0;
+            }
+            if (maskX > stage.offsetWidth - 200) {
+                maskX = stage.offsetWidth - 200;
+            }
+            if (maskY < 0) {
+                maskY = 0;
+            }
+            if (maskY > stage.offsetHeight - 200) {
+                maskY = stage.offsetHeight - 200;
+            }
+
+            this.maskX = maskX;
+            this.maskY = maskY;
+
+            this.$refs.mask.style.transform = `translate(${maskX}px, ${maskY}px)`;
+            this.previewX = -maskX * 2;
+            this.previewY = -maskY * 2;
+            this.maskVisibility = 'visible';
+        },
+        hideMask() {
+            this.maskVisibility = 'hidden';
+        },
+        changeImage(image) {
+            this.currentImage = image;
+        }
+    },
+    mounted() {
+        console.log(this.$refs.mask); // 确保这里输出的是遮罩层元素
+    }
+});
+</script>
+</body>
+</html>
